@@ -11,9 +11,8 @@
 
     if (!isset($_SESSION['id'])) {
         header("location:login.php");
-    }
-
-    if (isset($_SESSION['mensaje'])) {
+        
+    } else if (isset($_SESSION['mensaje'])) {
 
         $mensaje = $_SESSION['mensaje'];
         unset($_SESSION['mensaje']);

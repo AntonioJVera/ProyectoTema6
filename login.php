@@ -30,10 +30,10 @@
 
 <body>
     <?php require_once("template/partials/cabecera.php") ?>
-    <?php if (isset($mensaje)) require_once("template/partials/mensaje.php") ?>
 
     <!-- Page Content -->
     <div class="container">
+        <?php if (isset($mensaje)) require_once("template/partials/mensaje.php") ?>
         <?php require_once("template/Users/form_login.php")?>
     </div>
 
